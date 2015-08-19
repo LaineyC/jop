@@ -4,7 +4,7 @@
     <div class="panel-body">
         <h4><b>已完成</b></h4>
         <p class="bg-info">jop核心业务</p>
-        <p class="bg-info">jop-demo项目有api调用示例和一个web游戏五子棋。</p>
+        <p class="bg-info">jop-demo项目有api调用示例和一个web游戏五子棋（由于js签名算法问题 使得聊天不能用中文）。</p>
         <h4><b>设计中</b></h4>
         <p class="bg-info">错误处理模型设计</p>
         <p class="bg-info">与Spring，Guice集成设计未完成</p>
