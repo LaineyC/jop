@@ -6,7 +6,8 @@
         <p class="bg-info">jop核心业务</p>
         <p class="bg-info">jop-demo项目有api调用示例和一个web游戏五子棋。</p>
         <h4><b>设计中</b></h4>
-        <p class="bg-info">错误模型设计</p>
+        <p class="bg-info">错误处理模型设计</p>
+        <p class="bg-info">与Spring，Guice集成设计未完成</p>
         <p class="bg-info">文件上传方案优化</p>
         <p class="bg-info">项目文档编写</p>
     </div>
