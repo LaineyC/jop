@@ -1,0 +1,51 @@
+html,body{
+    font-size: 12px;
+}
+
+#online-player{
+    overflow: auto;
+    height: 250px;
+}
+
+#player-message{
+    overflow: auto;
+    height: 475px;
+}
+
+#hall{
+
+}
+
+#room{
+    display: none;
+}
+
+#chessboard{
+    width: 361px;
+    height: 361px;
+    background: url("chessboard.gif");
+}
+
+#chessboard td{
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+#chessboard.not-allowed td{
+    cursor: not-allowed;
+}
+
+.game-table{
+    height: 200px;
+}
+
+#chessboard td.black{
+    background: url("black.gif");
+}
+
+#chessboard td.white{
+    background: url("white.gif");
+}
+
+

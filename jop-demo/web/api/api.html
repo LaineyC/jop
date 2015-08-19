@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>api测试</title>
+    <link type="text/css" rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/library/bootstrap/css/bootstrap-theme.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/api/api.css"/>
+    <script type="text/javascript" src="/library/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/library/jquery.json/jquery.json.js"></script>
+    <script type="text/javascript" src="/library/jquery.encoding/jquery.encoding.js"></script>
+    <script type="text/javascript" src="/jop/JopClient.js"></script>
+    <script type="text/javascript" src="/api/api.js"></script>
+</head>
+<body class="bg-info">
+    <div class="container" id="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">api测试</div>
+                <div class="panel-body bg-info">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="app">应用键</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="app" class="form-control input-sm" placeholder="如：app1"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control input-sm" id="app-select">
+                                    <option value="-">--选择应用键-密钥--</option>
+                                    <option value="test-DGFG9072ED07449345C4048F344DB93F42AFBFFC">test</option>
+                                    <option value="gobang-971B1EC7563DA71B143EDE15D1E34AAC420C9942">gobang</option>
+                                    <option value="qq-815C7889B5DFAE39ABEDF3D6B735C609A2EDBF5F">qq</option>
+                                    <option value="yy-1FC76F1A7238C0C39435F8220188655D1665450C">yy</option>
+                                    <option value="11-33549072ED07449345C4048F344DB93F42AFBFFC">11</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="secret">应用密钥</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="secret" class="form-control input-sm" placeholder="如：secret1"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="session">服务会话</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="session" class="form-control input-sm" placeholder="如：5c9051e8-6c52-41a3-aaec-26a029513b05"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="method">服务方法</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="method" class="form-control input-sm" placeholder="如：user.login"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control input-sm" id="method-select">
+                                    <option value="">--选择服务方法--</option>
+                                    <option value="login">登录</option>
+                                    <option value="logout">注销</option>
+                                    <option value="logout2">注销-版本2.0</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="version">服务版本</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="version" class="form-control input-sm" placeholder="如：1.0.0.0"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign">服务签名</label>
+                            <div class="col-sm-4">
+                                <input type="text" id="sign" class="form-control input-sm" placeholder="如：755E3381043DCDD8055D230CB69329426E001961"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <a class="btn btn-primary input-sm" id="sign-btn" href="javascript:void(0);" role="button">生成签名</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="request">请求参数</label>
+                            <div class="col-sm-4">
+                                <textarea id="request" class="form-control input-sm" rows="8" placeholder="json格式"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-2">
+                                <a class="btn btn-primary input-sm" id="run-btn" href="javascript:void(0);" role="button">运行</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="response">响应结果</label>
+                            <div class="col-sm-4">
+                                <textarea id="response" class="form-control input-sm" rows="8" placeholder="json格式"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>  
