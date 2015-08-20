@@ -1,4 +1,4 @@
-# jop Java微型服务开放平台框架
+# Jop Java微型服务开放平台框架
 <div class="panel panel-info">
     <div class="panel-heading">Java微型服务开放平台框架。采用软件堆层，零依赖第三方及纯注解配置理念，实现了请求响应模型，应用授权及验证，服务安全控制 ，拦截器体系，SDK等诸多领域问题，同时提供整合Spring等主流服务层框架，可方便快捷地开发WebService服务。</div>
     <div class="panel-body">
